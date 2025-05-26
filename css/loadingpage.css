@@ -1,0 +1,149 @@
+
+.load {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  
+  .circular {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  
+  
+  
+  
+  @keyframes color {
+    100%,
+    0% {
+      stroke: #df1e26;
+    }
+    40% {
+      stroke: #0a65ff;
+    }
+    66% {
+      stroke: #078141;
+    }
+    80%,
+    90% {
+      stroke: #fdb515;
+    }
+  }
+  
+  demo-specific
+  /* body {
+    background-color: #eee;
+  } */
+  .showbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5%;
+  }
+
+
+
+ 
+
+
+
+  demo-specific
+
+/* body {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+
+} */
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: #fbae17;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fbae17;
+    transform-origin: 50%;
+    animation: bounce 500ms alternate infinite ease;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
