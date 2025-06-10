@@ -16,8 +16,15 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        rel="stylesheet"
+    />
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Dark Mode CSS -->
+    <link href="css/darkmode.css" rel="stylesheet" disable id="darkModeStylesheet">
 
 </head>
 
@@ -30,22 +37,23 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
+            <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <i class="fa-solid fa-diagram-project"></i>
+                <div class="sidebar-brand-text mx-3">ERP Dashboard</div>
+            </a> -->
 
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon sidebar-brand-text"></div>
+                <i class="fa-solid fa-diagram-project fa-2xl"></i>
+            </a>
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Divider -->
@@ -85,8 +93,12 @@
                         <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" href="utilities-color.html">Colors</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a> -->
+                        <a class="collapse-item" href="utilities-font.html">Font</a>
+                        <a class="collapse-item" href="utilities-form.html">Form</a>
+                        <a class="collapse-item" href="utilities-icon.html">Icon</a>
+
                     </div>
                 </div>
             </li>
@@ -100,14 +112,13 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Pages</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login.html">Login</a>
@@ -115,8 +126,9 @@
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item active" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
                         <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" href="undermaintanance.html">Under Maintanance</a>
                     </div>
                 </div>
             </li>
@@ -143,6 +155,8 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
+     
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -152,7 +166,7 @@
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar -->
+                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -160,8 +174,16 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
+                    <!-- Dark Mode -->
+                    <div class="d-flex align-items-center">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+                            <label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
+                        </div>
+                    </div>
+
                     <!-- Topbar Search -->
-                    <form
+                    <!-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -172,7 +194,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -329,7 +351,7 @@
                                     src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -348,7 +370,44 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
+                            </div> -->
+
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            aria-labelledby="userDropdown" style="width: 325px !important">
+
+                            <div class="d-flex align-items-center ml-2">
+                                <img class="img-profile rounded-circle m-1" style="width: 65px" src="img/undraw_profile.svg">
+                                <div class="col ml-2">
+                                    <h5 class="m-0 p-0">Saitama Sensei</h5>    
+                                    <div>God of Human</div>    
+                                </div>
                             </div>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-black"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <!-- <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-black"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-black"></i>
+                                Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <!-- <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-black"></i>
+                                Logout
+                            </a>
+                        </div>
+
+
                         </li>
 
                     </ul>
@@ -359,13 +418,43 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- 404 Error Text -->
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                        <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                        <a href="index.html">&larr; Back to Dashboard</a>
+                    <div class="text-center pt-4">
+                        <h1 style="font-size:80px;">404</h1>
+
+                        <h3>Page Not Found</h3>
+                        <p>Would you like to return to dashboard?</p>
+
+                        <a class="btn btn-primary" href="index.html">Back to Dashboard</a>
                     </div>
+
+
+    <p class="pt-2">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa-solid fa-code"></i>
+          View Source Code
+      </button>
+    </p>
+    <div class="container mt-4">            
+        <div class="code-snippet collapse" id="collapseExample2">
+            <div class="code-title">Code</div>
+            <button class="copy-button">Copy Code</button>
+                <pre>
+                    <code class="language-html">
+    &lt;div class=&quot;text-center pt-4&quot;&gt;
+        &lt;h1 style=&quot;font-size:80px;&quot;&gt;404&lt;/h1&gt;
+
+        &lt;h3&gt;Page Not Found&lt;/h3&gt;
+        &lt;p&gt;Would you like to return to dashboard?&lt;/p&gt;
+
+        &lt;a class=&quot;btn btn-primary&quot; href=&quot;{{ url('/404page')}}&quot;&gt;Back to Dashboard&lt;/a&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+        </div>
+    </div>
+
+
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -373,11 +462,11 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
+              <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2025</span>
                     </div>
                 </div>
             </footer>
@@ -422,7 +511,13 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Dark Mode -->
+    <script src="js/darkmode.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
 
 </body>
 
