@@ -26,6 +26,8 @@
     <!-- Dark Mode CSS -->
     <link href="css/darkmode.css" rel="stylesheet" disable id="darkModeStylesheet">
 
+    <!-- Pre Code Color -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -37,11 +39,6 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <i class="fa-solid fa-diagram-project"></i>
-                <div class="sidebar-brand-text mx-3">ERP Dashboard</div>
-            </a> -->
-
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon sidebar-brand-text"></div>
                 <i class="fa-solid fa-diagram-project fa-2xl"></i>
@@ -95,8 +92,6 @@
                         <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" href="utilities-color.html">Colors</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a> -->
                         <a class="collapse-item" href="utilities-font.html">Font</a>
                         <a class="collapse-item" href="utilities-form.html">Form</a>
                         <a class="collapse-item" href="utilities-icon.html">Icon</a>
@@ -184,20 +179,6 @@
                             <label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
                         </div>
                     </div>
-
-                    <!-- Topbar Search -->
-                    <!-- <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form> -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -327,18 +308,6 @@
                                         <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
@@ -349,31 +318,10 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div> -->
 
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                             aria-labelledby="userDropdown" style="width: 325px !important">
@@ -381,30 +329,26 @@
                             <div class="d-flex align-items-center ml-2">
                                 <img class="img-profile rounded-circle m-1" style="width: 65px" src="img/undraw_profile.svg">
                                 <div class="col ml-2">
-                                    <h5 class="m-0 p-0">Saitama Sensei</h5>    
-                                    <div>God of Human</div>    
+                                    <h5 class="m-0 p-0">User</h5>    
+                                    <div>Super Admin</div>    
                                 </div>
                             </div>
 
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">
-                                <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-black"></i>
                                 Profile
                             </a>
                             <a class="dropdown-item" href="#">
-                                <!-- <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> -->
                                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-black"></i>
                                 Settings
                             </a>
                             <a class="dropdown-item" href="#">
-                                <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
                                 <i class="fas fa-list fa-sm fa-fw mr-2 text-black"></i>
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <!-- <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> -->
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-black"></i>
                                 Logout
                             </a>
@@ -639,54 +583,11 @@
                                 </div>
                             </div>
 
-
-
                             <!-- To Do List -->
                             <div class="d-sm-flex align-items-center justify-content-between mb-2">
                                 <h4 class="h4 mb-0 text-gray-800">To Do List (Tags)</h4>
                             </div>
-                            <!-- <div class="card shadow mb-4" data-aos="fade-down">
-                                <div class="card-header">
-                                    <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs">
-                                        <li class="nav-item">
-                                            <a href="#tabs-home-1" class="nav-link active" data-bs-toggle="tab">Upcoming</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#tabs-profile-1" class="nav-link" data-bs-toggle="tab">Outdated</a>
-                                        </li>
-                                     
-                                        <li class="nav-item ms-auto">
-                                            <a href="#tabs-settings-1" class="nav-link" title="Settings" data-bs-toggle="tab">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active show" id="tabs-home-1">
-                                            <div class="text-center">
-                                                <img src="{{ asset('assets/img/nodata.svg') }}" alt="Welcome Image" class="img-fluid m-4" style="width: 200px">
-                                                <h4>Nothing for you to do</h4>
-                                                <h6>Have a Great Day</h6>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tabs-profile-1">
-                                            <div class="text-center">
-                                                <img src="{{ asset('assets/img/nodata.svg') }}" alt="Welcome Image" class="img-fluid m-4" style="width: 200px">
-                                                <h4>Nothing outdated</h4>
-                                                <h6>Have a Great Day</h6>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tabs-settings-1">
-                                            <h4>Settings tab</h4>
-                                            <div>Donec ac vitae diam amet vel leo egestas consequat rhoncus in luctus amet, facilisi sit mauris accumsan nibh habitant senectus</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
-
+                           
                             <div class="card shadow mb-4" data-aos="fade-down">
                                 <div class="card-header">
                                     <ul class="nav nav-tabs card-header-tabs" id="todoTabs" role="tablist">
@@ -700,7 +601,6 @@
                                             <a href="#tabs-settings-1" class="nav-link" id="settings-tab" title="Settings" data-toggle="tab" role="tab" aria-controls="tabs-settings-1" aria-selected="false">
                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
                                             </a>
-                                             
                                         </li>
                                     </ul>
                                 </div>
@@ -725,7 +625,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <!-- Color System -->
                             <div class="row">
@@ -845,7 +744,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2025</span>
+                        <span>Copyright &copy; ERP Dashboard 2025</span>
                     </div>
                 </div>
             </footer>
@@ -873,7 +772,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Ready to log out? Press “Logout” to complete your session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
@@ -903,7 +802,10 @@
     <script src="js/darkmode.js"></script>
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
-
+    
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
 </body>
 
 </html>
