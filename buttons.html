@@ -28,9 +28,17 @@
 
     <!-- Pre Code Color -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <!-- vendor datatables -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.bootstrap4.min.css">
 </head>
 
 <body id="page-top">
+
+    <div class="loader"></div>  
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -94,8 +102,6 @@
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
                         <a class="collapse-item" href="utilities-font.html">Font</a>
                         <a class="collapse-item" href="utilities-form.html">Form</a>
-                        <a class="collapse-item" href="utilities-icon.html">Icon</a>
-
                     </div>
                 </div>
             </li>
@@ -373,237 +379,9 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-6">
-
-                        <div class="card mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-white">Basic Button Example</h6>
-                            </div>
-                            <div class="card-body">
-                                Use Font Awesome Icons (included with this theme package) along with the circle buttons as shown in the examples below!
-                                
-                                <br><br>
-                                
-                                <b>Primary Button</b>
-                                <br>
-                            
-                                <button type="button" class="btn btn-primary">Primary</button>       
-                                <button type="button" class="btn btn-secondary">Secondary</button>       
-                                <button type="button" class="btn btn-success">Success</button>       
-                                <button type="button" class="btn btn-danger">Danger</button>         
-                                <button type="button" class="btn btn-warning">Warning</button>       
-                                <button type="button" class="btn btn-info">Info</button>
-                                            
-                                <br><br>
-
-                                <b>Outline Button</b>
-                                <br>
-                        
-                                <button type="button" class="btn btn-outline-primary">Primary</button>        
-                                <button type="button" class="btn btn-outline-secondary">Secondary</button>    
-                                <button type="button" class="btn btn-outline-success">Success</button>        
-                                <button type="button" class="btn btn-outline-danger">Danger</button>        
-                                <button type="button" class="btn btn-outline-warning">Warning</button>        
-                                <button type="button" class="btn btn-outline-info">Info</button>
-                                
-                            </div>
-                        </div>
-                        <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#basicButton" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa-solid fa-code"></i>
-                                View Source Code
-                            </button>
-                        </p>
-                        <div class="container mt-4">            
-                            <div class="code-snippet collapse" id="basicButton">
-                                <div class="code-title">Code</div>
-                                <button class="copy-button">Copy Code</button>
-                                    <pre>
-                                        <code class="language-html">
-                    Primary Button
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;       
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;       
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;       
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;         
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;       
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-                            
-
-                    Outline Button
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;        
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;    
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;        
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;        
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;        
-                    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
-                                        </code>
-                                    </pre>
-                            </div>
-                        </div>
-
-
-
-                            
-                        <div class="card mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-white">Button Icon</h6>
-                            </div>
-                            <div class="card-body">
-                                The styling for this basic card example is created by using default Bootstrap
-                                utility classes. By using utility classes, the style of the card component can be
-                                easily modified with no need for any custom CSS!
-
-                                <br><br>
-
-                                <a href="#" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                                <i class="fas fa-download fa-sm text-white-50"></i></a>
-
-                                <button class="btn btn-sm btn-primary shadow-sm" onclick="handleClick()">
-                                    <span class="icon">🔍</span>
-                                </button>
-
-                                <button class="btn btn-sm btn-primary shadow-sm" onclick="handleClick()">
-                                <span class="icon">🔍</span>
-                                <span class="text">Search</span>
-                            </button>
-                            </div>
-                        </div>
-                        <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buttonIcon" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa-solid fa-code"></i>
-                                View Source Code
-                            </button>
-                        </p>
-                        <div class="container mt-4">            
-                                <div class="code-snippet collapse" id="buttonIcon">
-                                    <div class="code-title">Code</div>
-                                    <button class="copy-button">Copy Code</button>
-                                        <pre>
-                                            <code class="language-html">
-                    &lt;div class=&quot;card mb-4&quot;&gt;
-                    &lt;div class=&quot;card-header py-3&quot;&gt;
-                        &lt;h6 class=&quot;m-0 font-weight-bold text-white&quot;&gt;Button Icon&lt;/h6&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;card-body&quot;&gt;
-                        The styling for this basic card example is created by using default Bootstrap
-                        utility classes. By using utility classes, the style of the card component can be
-                        easily modified with no need for any custom CSS!
-
-                        &lt;br&gt;&lt;br&gt;
-
-                        &lt;a href=&quot;#&quot; class=&quot;d-sm-inline-block btn btn-sm btn-primary shadow-sm&quot;&gt;
-                        &lt;i class=&quot;fas fa-download fa-sm text-white-50&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-
-                        &lt;button class=&quot;btn btn-sm btn-primary shadow-sm&quot; onclick=&quot;handleClick()&quot;&gt;
-                            &lt;span class=&quot;icon&quot;&gt;🔍&lt;/span&gt;
-                        &lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                                            </code>
-                                        </pre>
-                                </div>
-                        </div>
-
                         
 
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-white">Button Text & Icon</h6>
-                                </div>
-                                <div class="card-body">
-                                <!-- Use Font Awesome Icons (included with this theme package) along with the circle buttons as shown in the examples below! -->
-                                A "button icon & text" is a user interface (UI) element that combines both an icon and text within a single button. 
-                                This design approach is used to enhance the button's functionality and user experience by providing visual cues and 
-                                descriptive text. The icon quickly conveys the purpose of the button through a visual symbol, while the text provides 
-                                additional context or clarification. This combination makes the button more intuitive and accessible, helping users understand its function at a glance.
-
-                                <br><br>
-                                Button Generate Report
-                                <br>
-                                <a href="#" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                                    <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
-                                </a>
-                        
-                                <br><br>
-                                Primary Microsoft Button
-                                <a href="" class="btn btn-microsoft btn-user btn-block">
-                                    <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 256 256"><path fill="#f1511b" d="M121.666 121.666H0V0h121.666z"/><path fill="#80cc28" d="M256 121.666H134.335V0H256z"/>
-                                    <path fill="#00adef" d="M121.663 256.002H0V134.336h121.663z"/>
-                                    <path fill="#fbbc09" d="M256 256.002H134.335V134.336H256z"/>
-                                    </svg>
-                                    </i> 
-                                    Register with microsoft
-                                </a>
-
-                                <br>
-                                Secondary Microsoft Button
-
-                                <a href="" class="btn btn-outline-microsoft btn-user btn-block">
-                                    <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 256 256"><path fill="#f1511b" d="M121.666 121.666H0V0h121.666z"/><path fill="#80cc28" d="M256 121.666H134.335V0H256z"/>
-                                    <path fill="#00adef" d="M121.663 256.002H0V134.336h121.663z"/>
-                                    <path fill="#fbbc09" d="M256 256.002H134.335V134.336H256z"/>
-                                    </svg>
-                                    </i> 
-                                    Register with microsoft
-                                </a>
-
-                                <br>
-                        
-                                </div>
-                            </div>
-
-
-
-                            <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buttontextIcon" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa-solid fa-code"></i>
-                                View Source Code
-                            </button>
-                            </p>
-                            <div class="container mt-4">            
-                                <div class="code-snippet collapse" id="buttontextIcon">
-                                    <div class="code-title">Code</div>
-                                    <button class="copy-button">Copy Code</button>
-                                        <pre>
-                                            <code class="language-html">
-                    Button Generate Report
-                    &lt;a href=&quot;#&quot; class=&quot;d-sm-inline-block btn btn-sm btn-primary shadow-sm&quot;&gt;
-                    &lt;i class=&quot;fas fa-download fa-sm text-white-50&quot;&gt;&lt;/i&gt; Generate Report
-                    &lt;/a&gt;
-
-                    Primary Microsoft Button
-                    &lt;a href=&quot;&quot; class=&quot;btn btn-microsoft btn-user btn-block&quot;&gt;
-                        &lt;i&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15px&quot; height=&quot;15px&quot; viewBox=&quot;0 0 256 256&quot;&gt;&lt;path fill=&quot;#f1511b&quot; d=&quot;M121.666 121.666H0V0h121.666z&quot;/&gt;&lt;path fill=&quot;#80cc28&quot; d=&quot;M256 121.666H134.335V0H256z&quot;/&gt;
-                        &lt;path fill=&quot;#00adef&quot; d=&quot;M121.663 256.002H0V134.336h121.663z&quot;/&gt;
-                        &lt;path fill=&quot;#fbbc09&quot; d=&quot;M256 256.002H134.335V134.336H256z&quot;/&gt;
-                        &lt;/svg&gt;
-                        &lt;/i&gt; 
-                        Register with microsoft
-                    &lt;/a&gt;
-
-                    Secondary Microsoft Button
-                    &lt;a href=&quot;&quot; class=&quot;btn btn-outline-microsoft btn-user btn-block&quot;&gt;
-                        &lt;i&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15px&quot; height=&quot;15px&quot; viewBox=&quot;0 0 256 256&quot;&gt;&lt;path fill=&quot;#f1511b&quot; d=&quot;M121.666 121.666H0V0h121.666z&quot;/&gt;&lt;path fill=&quot;#80cc28&quot; d=&quot;M256 121.666H134.335V0H256z&quot;/&gt;
-                        &lt;path fill=&quot;#00adef&quot; d=&quot;M121.663 256.002H0V134.336h121.663z&quot;/&gt;
-                        &lt;path fill=&quot;#fbbc09&quot; d=&quot;M256 256.002H134.335V134.336H256z&quot;/&gt;
-                        &lt;/svg&gt;
-                        &lt;/i&gt; 
-                        Register with microsoft
-                    &lt;/a&gt;
-                                            </code>
-                                        </pre>
-                                </div>
-                            </div>
-                        </div>
-
-
+                      
 
 
 
@@ -1839,7 +1617,7 @@
                         <div class="col-lg-12">
                         <div class="card mb-4">
                             <div class="card-header">
-                            <h6 class="m-0 font-weight-bold text-white">Button Social</h6>
+                            <h6 class="m-0 font-weight-bold text-white">Button Text & Icon</h6>
                             </div>
                             <div class="card-body">
                             <div class="row g-2 align-items-center">
