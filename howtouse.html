@@ -38,10 +38,10 @@
 
 <body id="page-top">
 
-    <div class="loader"></div>  
-
     <!-- Page Wrapper -->
     <div id="wrapper">
+
+         <div class="loader"></div>  
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -361,106 +361,60 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800 mb-4">Border Utilities</h1>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Border Left Utilities -->
-                        <div class="col-lg-6">
-
-                            <div class="card mb-4 py-3 border-left-primary">
-                                <div class="card-body">
-                                    .border-left-primary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-secondary">
-                                <div class="card-body">
-                                    .border-left-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-success">
-                                <div class="card-body">
-                                    .border-left-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-info">
-                                <div class="card-body">
-                                    .border-left-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-warning">
-                                <div class="card-body">
-                                    .border-left-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-danger">
-                                <div class="card-body">
-                                    .border-left-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-dark">
-                                <div class="card-body">
-                                    .border-left-dark
-                                </div>
-                            </div>
-
+                    <h1 class="h3 mb-4 text-gray-800">How To Use</h1>
+                    <div class="card shadow mb-4" data-aos="fade-down">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="todoTabs" role="tablist">
+                                <li class="nav-item">
+                                    <a href="#tabs-overview" class="nav-link active" id="overview-tab" data-toggle="tab" role="tab" aria-controls="tabs-overview" aria-selected="true">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tabs-howto" class="nav-link" id="features-tab" data-toggle="tab" role="tab" aria-controls="tabs-features" aria-selected="false">How To</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tabs-features" class="nav-link" id="features-tab" data-toggle="tab" role="tab" aria-controls="tabs-features" aria-selected="false">Features</a>
+                                </li>
+                               
+                            </ul>
                         </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="todoTabsContent">
 
-                        <!-- Border Bottom Utilities -->
-                        <div class="col-lg-6">
+                                <div class="tab-pane fade" id="tabs-howto" role="tabpanel" aria-labelledby="howto-tab">
+                                    <h4>How to Use</h4>
+                                    <p><strong>1. Accessing the Application:</strong> Open the ERP Dashboard through the provided URL using a modern browser (e.g., Chrome, Edge, Firefox).</p>
+                                    <p><strong>2. Dashboard Overview:</strong> You will be directed to the main Dashboard which serves as the entry point to all modules.</p>
+                                    <p><strong>3. Sidebar Navigation:</strong> Use the sidebar on the left to navigate between Dashboard, Components, Utilities, Pages, Charts, Tables, and Help sections.</p>
+                                    <p><strong>4. Interacting with Modules:</strong> Click each menu to display its contents — for example, tables to view data, charts for visual insights, or components for reusable UI.</p>
+                                    <p><strong>5. Responsive Interface:</strong> This system is optimized for mobile, tablet, and desktop, ensuring ease of use across devices.</p>
+                                    <p><strong>6. Need Help?</strong> Return to this “How to Use” tab for guidance on interacting with the system.</p>
+                                </div>
 
-                            <div class="card mb-4 py-3 border-bottom-primary">
-                                <div class="card-body">
-                                    .border-bottom-primary
+                                <!-- Tab Overview -->
+                                
+
+                                <!-- Tab Features -->
+                                <div class="tab-pane fade" id="tabs-features" role="tabpanel" aria-labelledby="features-tab">
+                                    <h4>Key Features</h4>
+                                    <ul>
+                                    <li><strong>Modular Sidebar Navigation:</strong> Allows users to quickly access components, pages, utilities, and data tables.</li>
+                                    <li><strong>Responsive Layout:</strong> Works seamlessly across desktops, tablets, and mobile devices.</li>
+                                    <li><strong>Design System:</strong> Unified and reusable UI components styled with Bootstrap and customized with Laravel Blade templating.</li>
+                                    <li><strong>Tab Navigation:</strong> Clean separation of interface sections using tabbed panels.</li>
+                                    <li><strong>Chart & Table Integration:</strong> Display dynamic data visualizations and records.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Tab How to Use -->
+                                <div class="tab-pane fade show active" id="tabs-overview" role="tabpanel" aria-labelledby="overview-tab">
+                                    <h4>Dashboard Overview</h4>
+                                    <p>This ERP Dashboard application provides a unified interface for accessing various modules such as components, utilities, pages, charts, and tables. It is designed to help internal users manage information efficiently across departments using a consistent design system.</p>
                                 </div>
                             </div>
-
-                            <div class="card mb-4 py-3 border-bottom-secondary">
-                                <div class="card-body">
-                                    .border-bottom-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-success">
-                                <div class="card-body">
-                                    .border-bottom-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-info">
-                                <div class="card-body">
-                                    .border-bottom-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-warning">
-                                <div class="card-body">
-                                    .border-bottom-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-danger">
-                                <div class="card-body">
-                                    .border-bottom-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-dark">
-                                <div class="card-body">
-                                    .border-bottom-dark
-                                </div>
-                            </div>
-
                         </div>
-
                     </div>
+
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -509,7 +463,7 @@
         </div>
     </div>
 
-      <!-- Bootstrap core JavaScript-->
+    <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -534,7 +488,6 @@
     <!-- Prism.js for syntax highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
-
 </body>
 
 </html>
