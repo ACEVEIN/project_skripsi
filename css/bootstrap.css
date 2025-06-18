@@ -10794,8 +10794,18 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
-
-
+.bg-register-image {
+  /* background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800"); */
+  background: url("https://images.unsplash.com/photo-1618278942403-e973260cc425?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
+.bg-password-image {
+  /* background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800"); */
+  background: url(" https://images.unsplash.com/photo-1535779023901-a39d15762564?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
 
 @media print {
   *,
