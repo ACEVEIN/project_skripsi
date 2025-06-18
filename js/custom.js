@@ -320,37 +320,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Swiper Slider
-$(document).ready(function() {
-    var swiper = new Swiper('.slide-content', {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
-        centerSlide: 'true',
-        fade: 'true',
-        grabCursor: 'true',
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 2,
-            },
-            950: {
-                slidesPerView: 3,
-            },
-        },
-    });
-});
 
 
 // label
@@ -413,17 +382,3 @@ document.querySelectorAll('.copy-button').forEach(button => {
     });
 });
 
-// Magnifier zoom
-let imageZoom = document.getElementById('imageZoom');
-imageZoom.addEventListener('mousemove', (event) => {
-    imageZoom.style.setProperty('--display', 'block');
-    let pointer = {
-        x:  (event.offsetX * 100) / imageZoom.offsetWidth,
-        y:  (event.offsetY * 100) / imageZoom.offsetHeight
-    }
-    imageZoom.style.setProperty('--zoom-x', pointer.x + '%');
-    imageZoom.style.setProperty('--zoom-y', pointer.y + '%');
-})
-imageZoom.addEventListener('mouseleave', () => {
-    imageZoom.style.setProperty('--display', 'none');
-})

@@ -18,6 +18,10 @@ hr {
     background-color: #23272b !important;
     border-bottom: 1px solid #444;
 }
+.nav-link {
+    color: #e0e0e0!important;
+}
+
  
 .text-gray-600 {
     color: white !important;
@@ -92,22 +96,30 @@ hr {
 .dropdown-menu,
 .dropdown-item,
 .modal-content {
-    /* background-color: #3a3f44; */
     color: #ffffff;
     border-color: #000000;
-    /* background-color:#141824 !important; */
-    background-color: #343a40;
+    background-color:#212529 !important;
 }
  
+/* Di file darkmode.css Anda, setelah aturan .dropdown-item yang ada */
+
+.dropdown-item:hover,
+.dropdown-item:focus { /* Tambahkan juga :focus untuk aksesibilitas keyboard */
+    background-color: #343a40 !important; /* Warna abu-abu gelap Bootstrap (mirip bg-secondary) */
+    color: #ffffff !important; /* Pastikan teks tetap putih */
+}
+
 .card-header,
 .card-footer {
-    background-color: #0a65ff;
+    background-color: #DEE2E608;
     color: #ffffff;
 }
 
  
 .card-body {
     color: #ffffff;
+
+    background-color: #212529;
 }
  
 .bg-white {
@@ -118,12 +130,12 @@ hr {
 }
 
 .bg-primary {
-    background-color: #0a65ff !important;
+    background-color: #DEE2E608 !important;
 }
  
 /* Buttons */
 .btn-primary {
-    background-color: #0a65ff;
+    background-color: #DEE2E608;
     border-color: #005cbf;
 }
  
@@ -135,13 +147,13 @@ hr {
 
 /* Buttons Outline */
 .btn-outline-primary {
-    border-color: #0a65ff;
-    color: #0a65ff ;
+    border-color: #DEE2E608;
+    color: #DEE2E608 ;
 }
  
 .btn-outline-primary:hover {
-    background-color: #0a65ff;
-    border-color: #0a65ff;
+    background-color: #DEE2E608;
+    border-color: #DEE2E608;
 }
 
 .btn-outline-dark{
