@@ -36,7 +36,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-               <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
                   <a class="navbar-brand d-flex align-items-center" href="index.html">
                      <i class="fa-solid fa-diagram-project fa-2xl mr-2 text-primary"></i>
                      <span class="font-weight-bold text-dark"></span>
@@ -122,14 +122,48 @@
                      </ul>
 
                      <div class="d-flex align-items-center ml-auto">
-                     <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
-                  <label class="custom-control-label text-dark" for="darkModeSwitch">
-                     <i class="fa-solid fa-moon d-inline"></i> <i class="fa-solid fa-sun d-none" style="color: #FFD43B;"></i>   </label>
+                        <div class="custom-control custom-switch mr-3"> <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+                        <label class="custom-control-label text-dark" for="darkModeSwitch">
+                           <i class="fa-solid fa-moon d-inline"></i> <i class="fa-solid fa-sun d-none" style="color: #FFD43B;"></i>
+                        </label>
+                        </div>
+
+                        <li class="nav-item dropdown no-arrow list-unstyled">
+                  <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <!-- <span class="mr-2 d-none d-lg-inline text-gray-600 small">Saitama Sensei</span> -->
+                     <i class="fa-solid fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown" style="width: 325px !important">
+                     <div class="d-flex align-items-center ml-2">
+                        <i class="fa-solid fa-user m-1" style="width: 65px"></i>
+                        <div class="col ml-2">
+                        <h5 class="m-0 p-0">User 1</h5>
+                        <div>God of Human</div>
+                        </div>
+                     </div>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-black"></i>
+                        Profile
+                     </a>
+                     <a class="dropdown-item" href="#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-black"></i>
+                        Settings
+                     </a>
+                     <a class="dropdown-item" href="#">
+                        <i class="fas fa-list fa-sm fa-fw mr-2 text-black"></i>
+                        Activity Log
+                     </a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-black"></i>
+                        Logout
+                     </a>
                   </div>
+                  </li>
                      </div>
                   </div>
-                  </nav>
+               </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
